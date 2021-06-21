@@ -32,7 +32,7 @@ header > #toggle::before{
     top: 7px;
     width: 100%;
     height: 3px;
-    background-color: black;
+    background-color: wheat;
 
     /* Top = arriba
         left = izq
@@ -47,7 +47,7 @@ header > #toggle::after{
     bottom: 7px;
     width: 100%;
     height: 3px;
-    background-color: black;
+    background-color: wheat;
     /* Top = arriba
         left = izq
         right = der
@@ -74,7 +74,7 @@ header > #toggle::after{
     position: relative;
     width: 100%;
     min-height: 100vh;
-    background: url(content/a.jpg);
+    background: url(content/fondo2.jpg);
     background-size: cover;
     display: flex;
     align-items: center;
@@ -91,7 +91,7 @@ header > #toggle::after{
     right: 200%;
     width: 400px;
     height: 100vh;
-    background: #142131;
+    background: #7caeeb44;
     z-index: 1;
     display: grid;
     place-items: center;
@@ -118,13 +118,13 @@ header > #toggle::after{
 }
 
 .content h2{
-    color: black;
+    color: white;
     font-size: 2.5em;
 
 }
 .content p{
     font-size: 1.2em;
-    color: black;
+    color: white;
     font-weight: 300;
     
 }

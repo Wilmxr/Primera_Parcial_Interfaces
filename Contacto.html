@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="Css/styleContacto.css">
+    <title>Examen Parcial 1</title>
+</head>
+<body>
+  <section class="banner" id="sec">
+    <header>
+        <div id="toggle" onclick="toggle()"></div>
+    </header>
+    <section  class="sec2">
+      <h1 class="titulo"> Contacto</h1>
+  
+      <div class="container"> 
+      <div class="Contacto">  
+  
+        <div class="formulario">
+          <input id="asunto" class="input-text" type="text">
+          <label for="asunto" class="label"> Asunto</label>
+       </div> 
+  
+       <div class="formulario">
+          <input id="email" class="input-text" type="email">
+          <label for="email" class="label"> Correo Electronico</label>
+          </div> 
+          <div class="formulario">
+  
+          <input id="desc" class="input-text" type="text" size="100">
+          <label for="Descripcion" class="label"> Descripcion</label>
+         
+      </div>  
+  
+        
+        <div class="formulario">
+              
+          <input class="boton" type="submit" value="Enviar">
+        
+  
+        </div>  
+        
+      
+  
+      </div>
+  
+  
+
+      </div>
+  
+  </section>
+
+</section>
+<nav id="navigation">
+    <ul>
+        <li><a href="inicio.html">Inicio</a></li>
+        <li><a href="Acerca.html">Acerca de mí</a></li>
+        <li><a href="Contacto.html">Contacto</a></li>
+    </ul>
+</nav>
+<script type="text/javascript">
+function toggle(){
+    var seccion = document.getElementById("sec")
+    var nav = document.getElementById("navigation")
+    seccion.classList.toggle('active')
+    nav.classList.toggle('active')
+}
+</script>
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+</html>

@@ -1,0 +1,155 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 100px;
+    z-index: 10;
+    transition: 0.6s;
+}
+
+
+header #toggle{
+    position: relative;
+    width: 40px;
+    height: 40px;
+}
+
+header > #toggle::before{
+    content: '';
+    position: absolute;
+    top: 7px;
+    width: 100%;
+    height: 3px;
+    background-color: wheat;
+
+    /* Top = arriba
+        left = izq
+        right = der
+        bottom=abajo */
+}
+
+
+header > #toggle::after{
+    content: '';
+    position: absolute;
+    bottom: 7px;
+    width: 100%;
+    height: 3px;
+    background-color: wheat;
+    /* Top = arriba
+        left = izq
+        right = der
+        bottom=abajo */
+}
+
+.banner.active header #toggle::before{
+    top: 50%;
+    left: 50%;
+    /* trasnformaciones
+    permiten manipular y transformar elementos */
+    transform: translate(-50%,-50%) rotate(45deg);
+}
+
+.banner.active header #toggle::after{
+    top: 50%;
+    left: 50%;
+    /* trasnformaciones
+    permiten manipular y transformar elementos */
+    transform: translate(-50%,-50%) rotate(-45deg);
+}
+
+.banner{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background: url(content/fondo2.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.banner .active{
+    transform: translateY(-400px);
+}
+
+#navigation{
+    position: fixed ;
+    top: 0%;
+    right: 200%;
+    width: 400px;
+    height: 100vh;
+    background: #7caeeb44;
+    z-index: 1;
+    display: grid;
+    place-items: center;
+    transition: 0.5s;
+}
+
+#navigation.active{
+    left: 0;
+}
+
+#navigation ul li a{
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 3em;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+
+
+
+
+
+
+
+.sec2{
+max-width: 800px;
+margin: 50px auto;
+position: relative;
+box-shadow: 0px 10px 30px 0px black;
+background: none;
+}
+
+.sec2 .titulo{
+text-transform: capitalize;
+text-align:center;
+letter-spacing: 0.2em;
+color: blanchedalmond;
+
+}
+
+.Contacto .formulario{
+    position: relative;
+    margin: 40px 0;
+
+
+}
+.Contacto .input-text{
+display: block;
+width: 100%;
+height: 36px;
+border-width: 0 0 2px 0;
+border-color: black;
+font-size: 18px;
+
+
+}
+
+.Contacto .label{
+
+    color: blanchedalmond;
+}
