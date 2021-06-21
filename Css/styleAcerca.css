@@ -93,7 +93,7 @@ header > #toggle::after{
     right: 200%;
     width: 400px;
     height: 100vh;
-    background: #7caeeb44;
+    background: #292d3144;
     z-index: 1;
     display: grid;
     place-items: center;
@@ -116,7 +116,8 @@ header > #toggle::after{
     
     max-width: 600px;
     margin-left: 600px;
-    min-height: 60vh;
+    margin-bottom: 220px;
+ 
 }
 
 .content h2{
@@ -143,18 +144,77 @@ header > #toggle::after{
 
 .skill li {
     position: relative;
-    display:inline;
+    display:inline-block;
     place-items: center;
-    width: 100px;
+    width: 120px;
     height: 100px;
     right: 1100px;
     text-decoration: none;
     margin: 5px;
-    color: gray;
+    background: transparent;
 }
 
 
 .skill li  img{
     max-width: 100px;
+    max-height: 100px;
     
 }
+
+.breadcrumb{
+    position: relative;
+    top: 100%;
+    
+    }
+    
+    
+    .bc{
+    padding: 10px 16px;
+    list-style: none;
+    
+    
+    }
+    
+    .bc-item{
+    display: inline;
+    font-size: 18px;
+    
+    }
+    
+    .bc li+li::before{
+        padding:8px;
+        color: white;
+        content: ">>";
+    }
+    
+    .bc-item{
+        color:#2e4053;
+        text-decoration:none;
+    }
+    
+    .bc-item a{
+    color: white;
+    
+    }
+    .bc-item a:hover{
+        color: red;
+    }
+    #pie{
+        text-align: center;
+    }
+    
+    .lista{
+        padding: 10px 16px;
+        list-style: none;
+        background-color: black;
+        
+        min-height: 5vh;
+        position: relative;
+       
+    }
+    
+    .pie-item{
+        color: white;
+        display: inline;
+        
+    }

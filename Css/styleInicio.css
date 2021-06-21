@@ -91,7 +91,7 @@ header > #toggle::after{
     right: 200%;
     width: 400px;
     height: 100vh;
-    background: #7caeeb44;
+    background: #292d3144;
     z-index: 1;
     display: grid;
     place-items: center;
@@ -114,7 +114,7 @@ header > #toggle::after{
     
     max-width: 600px;
     margin-left: 600px;
-
+    min-height: 50vh
 }
 
 .content h2{
@@ -129,8 +129,69 @@ header > #toggle::after{
     
 }
 
+.breadcrumb{
+position: relative;
+top: 100%;
+
+}
 
 
+.bc{
+padding: 10px 16px;
+list-style: none;
 
 
+}
 
+.bc-item{
+display: inline;
+font-size: 18px;
+
+}
+
+.bc li+li::before{
+    padding:8px;
+    color: white;
+    content: ">>";
+}
+
+.bc-item{
+    color:#2e4053;
+    text-decoration:none;
+}
+
+.bc-item a{
+color: white;
+
+}
+.bc-item a:hover{
+    color: red;
+}
+  
+
+#pie{
+    text-align: center;
+}
+
+.lista{
+    padding: 10px 16px;
+    list-style: none;
+    background-color: black;
+    
+    min-height: 5vh;
+    position: relative;
+   
+}
+
+.pie-item{
+    color: white;
+    display: inline;
+    
+}
+
+
+.foto img{
+    max-width: 300px;
+    max-height: 400px;
+   
+}
