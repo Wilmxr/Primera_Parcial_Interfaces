@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/styleInicio.css">
+    <title>Examen Parcial 1</title>
+</head>
+<body>
+    <section class="banner" id="sec">
+        <header>
+            <div id="toggle" onclick="toggle()"></div>
+        </header>
+        <div class="content">
+            <h2>Quien soy</h2>
+            <p>Me llamo Wilmer Sanabria, vivo en Llano Grande de Cartago, junto a mi familia.
+                En mi familia, somos 6 personas. Mi papá,mi mamá, mi hermana, mi hermano, mi sobrino de 4 años y mi persona.<br>
+                Actualmente, me encuentro estudiando Ingenieria en Informatica, en la Universida Florencio del Castillo.</p>
+        
+        
+        
+        
+        </div>
+
+    </section>
+    <nav id="navigation">
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Acerca de mí</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+<script type="text/javascript">
+    function toggle(){
+        var seccion = document.getElementById("sec")
+        var nav = document.getElementById("navigation")
+        seccion.classList.toggle('active')
+        nav.classList.toggle('active')
+    }
+</script>
+
+
+
+
+
+
+</body>
+</html>

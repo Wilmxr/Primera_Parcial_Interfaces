@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styleAcerca.css">
+    <title>Examen Parcial 1</title>
+</head>
+
+<body>
+    <section class="banner" id="sec">
+        <header>
+            <div id="toggle" onclick="toggle()"></div>
+        </header>
+        <div class="content">
+            <h2>¿Quien soy?</h1>
+            <h1>Soy una persona respetosa,amable, y trato de ser responsable</h2>
+            <h1>Me gusta mucho jugar video juegos, ver series y jugar con mis mascotas</h1>
+
+
+            <h2>Educacion</h2>
+            <h1>Yo curse la primaria en una Escuela en Llano Grande de Cartago, llamada Escuela Pastor Barquero.<br>
+            Luego, ingrese el Colegio San Luis Gonzaga donde saque la secundaria. Y, actualmente me encuentro cursando la carrera Ingenieria Informatica
+             en la Universidad Florencio del Castillo
+            </h1>
+            
+
+            <h2>Conocimientos</h2>
+            <ul class="skill">    
+                <li><img src="Css/content/access.png" alt="access"></li>
+                <li><img src="Css/content/c#.jpg" alt="c#">  </li>
+                <li><img src="Css/content/c++.jpg" alt="c++">   </li>
+            </ul>
+            </div>
+
+    </section>
+    <nav id="navigation">
+        <ul>
+            <li><a href="inicio.html">Inicio</a></li>
+            <li><a href="Acerca.html">Acerca de mí</a></li>
+            <li><a href="Contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+<script type="text/javascript">
+    function toggle(){
+        var seccion = document.getElementById("sec")
+        var nav = document.getElementById("navigation")
+        seccion.classList.toggle('active')
+        nav.classList.toggle('active')
+    }
+</script>
+
+</body>
+
+</html>
